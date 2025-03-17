@@ -17,6 +17,13 @@ Use without installing:
 npx vibecode start my-project
 ```
 
+once you install, you'll see this prompt:
+Github Token is missing. Please provide your Github Personal Access Token
+
+go to github developer settings -> Generate a new token with repo and workflow permissions, and paste the token
+
+-- this step is needed so the CLI can create a GitHub repo for you automatically.
+
 Or install globally:
 
 npm install -g vibecode
