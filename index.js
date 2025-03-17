@@ -131,8 +131,27 @@ async function createGitHubRepo(projectName) {
 
     const vercelURL = getVercelLiveURL();
     console.log(
-      chalk.bgBlue.white.bold(`🎉 Your project is live at → ${vercelURL}`)
+      chalk.bgPurple.bold(`🎉 Your project is live at → ${vercelURL}`)
     );
+
+    //  **Ensure Dependencies Are Installed Before Running the Project**
+    console.log("📦 Installing dependencies...");
+    shell.exec("npm install", { silent: false });
+
+    console.log("💻 Starting your project locally...");
+    const devCommand = framework === "React" ? "npm run dev" : "npm run dev";
+    shell.exec(devCommand, { async: true });
+
+    //  Show the correct development link based on the framework
+    if (framework === "React") {
+      console.log(
+        "🚀 Done! Your project is running at:\n   - React (Vite): http://localhost:5173"
+      );
+    } else if (framework === "Next.js") {
+      console.log(
+        "🚀 Done! Your project is running at:\n   - Next.js: http://localhost:3000"
+      );
+    }
   } catch (error) {
     console.error("❌ Error creating GitHub repository:", error.message);
     process.exit(1);
@@ -256,29 +275,6 @@ function checkVercelLogin() {
     console.log(`✅ Logged into Vercel as ${loginCheck}`);
   }
 }
-// function checkVercelLogin() {
-//   console.log("🔍 Checking for Vercel CLI...");
-
-//   const vercelInstalled = shell
-//     .exec("which vercel", { silent: true })
-//     .stdout.trim();
-//   if (!vercelInstalled) {
-//     console.error("❌ Vercel CLI is not installed. Install it using:");
-//     console.error("   npm install -g vercel");
-//     process.exit(1);
-//   }
-
-//   console.log("✅ Vercel CLI detected!");
-//   const loginCheck = shell
-//     .exec("vercel whoami", { silent: true })
-//     .stdout.trim();
-//   if (!loginCheck) {
-//     console.log("🔑 You are not logged into Vercel. Please log in:");
-//     shell.exec("vercel login");
-//   } else {
-//     console.log(`✅ Logged into Vercel as ${loginCheck}`);
-//   }
-// }
 
 // Ensure the CLI command executes correctly
 (async () => {
