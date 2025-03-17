@@ -4,10 +4,10 @@ Quickly set up React (Vite) or Next.js projects with automatic GitHub repo creat
 
 ## 🌟 Features
 
-- ✅ Supports React (Vite) & Next.js
-- ✅ Creates a GitHub repo automatically
-- ✅ Deploys to Vercel instantly
-- ✅ Pre-configured setup with a stylish UI
+- Supports React (Vite) & Next.js
+- Creates a GitHub repo automatically
+- Deploys to Vercel instantly
+- Pre-configured setup with a stylish UI
 
 ## 📥 Installation
 
@@ -40,12 +40,12 @@ Then choose a framework:
 
 ### What Vibecode Does:
 
-- ✅ Creates a GitHub repository
-- ✅ Clones it locally
-- ✅ Sets up the project
-- ✅ Installs dependencies
-- ✅ Pushes to GitHub
-- ✅ Deploys to Vercel
+- Creates a GitHub repository
+- Clones it locally
+- Sets up the project
+- Installs dependencies
+- Pushes to GitHub
+- Deploys to Vercel
 
 At the end, you'll see:🎉 Your project is live at → https://your-live-vercel-link.vercel.app
 
