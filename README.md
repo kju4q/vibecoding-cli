@@ -1,15 +1,15 @@
-# 🚀 Vibecode – The Ultimate Vibe Coding CLI
+# Vibecode CLI
 
-Quickly set up React (Vite) or Next.js projects with automatic GitHub repo creation and Vercel deployment.
+> Quickly set up React (Vite) or Next.js projects with automatic GitHub repo creation and Vercel deployment.
 
-## 🌟 Features
+## Features
 
 - Supports React (Vite) & Next.js
 - Creates a GitHub repo automatically
 - Deploys to Vercel instantly
 - Pre-configured setup with a stylish UI
 
-## 📥 Installation
+## Installation
 
 Use without installing:
 
@@ -32,7 +32,7 @@ Then run:
 
 vibecode start my-project
 
-## 🚀 How to Use
+## How to Use
 
 Run the following command:
 
@@ -54,7 +54,7 @@ Then choose a framework:
 - Pushes to GitHub
 - Deploys to Vercel
 
-At the end, you'll see:🎉 Your project is live at → https://your-live-vercel-link.vercel.app
+At the end, you'll see: Your project is live at → https://your-live-vercel-link.vercel.app
 
 💻 Run the Project Locally
 
@@ -113,7 +113,7 @@ npm install
 node index.js start test-project
 ```
 
-4. Submit a PR! 🚀
+4. Submit a PR!
 
 Feel free to contribute, improve, or add features!
 
@@ -121,4 +121,4 @@ Feel free to contribute, improve, or add features!
 
 MIT License – Free to use & modify!
 
-🚀 Now go build something awesome with Vibecode! 🎨✨
+Now go build something awesome with Vibecode!✨
